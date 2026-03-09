@@ -47,5 +47,11 @@ def add_record():
         clear_inputs()
         
 
-        
+        # ---------------- UPDATE DISPLAY FUNCTION ----------------
+def update_display():
+    listbox.delete(0, tk.END)
+
+    for i in range(len(customer_names)):
+        record = customer_names[i] + " | " + items_hired[i] + " | Qty: " + quantities[i] + " | Return: " + return_dates[i]
+        listbox.insert(tk.END, record)
  
