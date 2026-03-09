@@ -23,3 +23,12 @@ def check_input(name, receipt, item, quantity, return_date):
         return False
 
     return True
+
+
+# ---------------- ADD RECORD FUNCTION ----------------
+def add_record():
+    name = name_entry.get()
+    receipt = receipt_entry.get()
+    item = item_entry.get()
+    quantity = quantity_entry.get()
+    return_date = return_entry.get()
