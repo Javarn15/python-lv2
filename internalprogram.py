@@ -35,3 +35,17 @@ def add_record():
 
        # validate user input
     if check_input(name, receipt, item, quantity, return_date):
+        
+       # add data to lists
+        customer_names.append(name)
+        receipt_numbers.append(receipt)
+        items_hired.append(item)
+        quantities.append(quantity)
+        return_dates.append(return_date)
+
+        update_display()
+        clear_inputs()
+        
+
+        
+ 
