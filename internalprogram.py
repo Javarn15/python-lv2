@@ -5,5 +5,7 @@ WINDOW_TITLE = "Julie's Party Hire"
 
 #lists to store data 
 
-names = []
+customer_names = []
+receipts_numbers= []
+quantities = []
 
