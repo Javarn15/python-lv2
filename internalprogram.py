@@ -55,3 +55,22 @@ def update_display():
         record = customer_names[i] + " | " + items_hired[i] + " | Qty: " + quantities[i] + " | Return: " + return_dates[i]
         listbox.insert(tk.END, record)
  
+
+
+ # ---------------- DELETE RECORD FUNCTION ----------------
+def delete_record():
+    selected = listbox.curselection()
+
+    if selected:
+        index = selected[0]
+
+        customer_names.pop(index)
+        receipt_numbers.pop(index)
+        items_hired.pop(index)
+        quantities.pop(index)
+        return_dates.pop(index)
+
+        update_display()
+    else:
+        messagebox.showerror("Selection Error", "Please select a record to delete")
+
