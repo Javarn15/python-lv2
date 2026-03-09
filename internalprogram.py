@@ -32,3 +32,6 @@ def add_record():
     item = item_entry.get()
     quantity = quantity_entry.get()
     return_date = return_entry.get()
+
+       # validate user input
+    if check_input(name, receipt, item, quantity, return_date):
