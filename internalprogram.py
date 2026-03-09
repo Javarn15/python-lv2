@@ -16,3 +16,10 @@ def check_input(name, receipt, item, quantity, return_date):
     if name == "" or receipt == "" or item == "" or quantity == "" or return_date == "":
         messagebox.showerror("Input Error", "All fields must be filled in")
         return False
+ 
+     # check quantity is a number
+    if not quantity.isdigit():
+        messagebox.showerror("Input Error", "Quantity must be a number")
+        return False
+
+    return True
