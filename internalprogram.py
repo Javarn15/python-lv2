@@ -119,3 +119,10 @@ def clear_inputs():
     item_entry.delete(0, tk.END)
     quantity_entry.delete(0, tk.END)
     return_entry.delete(0, tk.END)
+
+
+    # ---------------- QUIT FUNCTION ----------------
+def quit_program():
+
+    # BUG 4: incorrect window name
+    root.destroy()
