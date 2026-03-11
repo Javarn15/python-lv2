@@ -108,3 +108,14 @@ def delete_record():
     else:
 
         messagebox.showerror("Selection Error", "Please select a record to delete")
+
+
+
+        # ---------------- CLEAR INPUTS FUNCTION ----------------
+def clear_inputs():
+
+    name_entry.delete(0, tk.END)
+    receipt_entry.delete(0, tk.END)
+    item_entry.delete(0, tk.END)
+    quantity_entry.delete(0, tk.END)
+    return_entry.delete(0, tk.END)
