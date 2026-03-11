@@ -44,7 +44,7 @@ def add_record():
         return_dates.append(return_date)
 
         update_display()
-        clear_inputs()
+        clear_input()
         
 
         # ---------------- UPDATE DISPLAY FUNCTION ----------------
@@ -72,5 +72,18 @@ def delete_record():
 
         update_display()
     else:
-        messagebox.showerror("Selection Error", "Please select a record to delete")
+        messagebox.showerror("Selection Error", "select a record to delete")
 
+
+
+# ---------------- UPDATE DISPLAY FUNCTION ----------------
+def update_display():
+
+    listbox.delete(0, tk.END)
+
+    for i in range(len(customer_names)):
+
+        
+        record = customer_names[i] + " | " + item_hired[i] + " | Qty: " + quantities[i] + " | Return: " + return_dates[i]
+
+        listbox.insert(tk.END, record)
