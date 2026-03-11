@@ -126,3 +126,10 @@ def quit_program():
 
     # BUG 4: incorrect window name
     root.destroy()
+
+
+
+# ---------------- GUI WINDOW ----------------
+window = tk.Tk()
+window.title(WINDOW_TITLE)
+window.geometry("500x400")
