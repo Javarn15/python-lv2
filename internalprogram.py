@@ -96,3 +96,15 @@ def delete_record():
     if selected:
 
         index = selected[0]
+
+        customer_names.pop(index)
+        receipt_numbers.pop(index)
+        items_hired.pop(index)
+        quantities.pop(index)
+        return_dates.pop(index)
+
+        update_display()
+
+    else:
+
+        messagebox.showerror("Selection Error", "Please select a record to delete")
