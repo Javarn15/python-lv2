@@ -44,7 +44,7 @@ def add_record():
         return_dates.append(return_date)
 
         update_display()
-        clear_input()
+        clear_inputs()
         
 
         # ---------------- UPDATE DISPLAY FUNCTION ----------------
