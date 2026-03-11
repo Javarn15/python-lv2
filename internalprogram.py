@@ -156,3 +156,11 @@ quantity_entry.pack()
 tk.Label(window, text="Return Date").pack()
 return_entry = tk.Entry(window)
 return_entry.pack()
+
+# ---------------- LISTBOX DISPLAY ----------------
+listbox = tk.Listbox(window, width=70)
+listbox.pack(pady=10)
+
+
+# ---------------- RUN PROGRAM ----------------
+window.mainloop()
