@@ -124,7 +124,7 @@ def clear_inputs():
     # ---------------- QUIT FUNCTION ----------------
 def quit_program():
 
-    # BUG 4: incorrect window name
+   
     root.destroy()
 
 
@@ -133,3 +133,26 @@ def quit_program():
 window = tk.Tk()
 window.title(WINDOW_TITLE)
 window.geometry("500x400")
+
+
+
+# ---------------- LABELS AND ENTRIES ----------------
+tk.Label(window, text="Customer Full Name").pack()
+name_entry = tk.Entry(window)
+name_entry.pack()
+
+tk.Label(window, text="Receipt Number").pack()
+receipt_entry = tk.Entry(window)
+receipt_entry.pack()
+
+tk.Label(window, text="Item Hired").pack()
+item_entry = tk.Entry(window)
+item_entry.pack()
+
+tk.Label(window, text="Quantity").pack()
+quantity_entry = tk.Entry(window)
+quantity_entry.pack()
+
+tk.Label(window, text="Return Date").pack()
+return_entry = tk.Entry(window)
+return_entry.pack()
