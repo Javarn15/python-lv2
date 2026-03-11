@@ -83,7 +83,16 @@ def update_display():
 
     for i in range(len(customer_names)):
 
-        
         record = customer_names[i] + " | " + item_hired[i] + " | Qty: " + quantities[i] + " | Return: " + return_dates[i]
 
         listbox.insert(tk.END, record)
+
+
+        # ---------------- DELETE RECORD FUNCTION ----------------
+def delete_record():
+
+    selected = listbox.curselection()
+
+    if selected:
+
+        index = selected[0]
