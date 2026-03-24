@@ -20,7 +20,7 @@ def check_input(name, receipt, item, quantity, return_date):
         messagebox.showerror("Input Error", "All fields must be filled in")
         return False
 
-    if not quantity.isdigit():
+    if not quantitys.isdigit():
         messagebox.showerror("Input Error", "Quantity must be a number")
         return False
 
