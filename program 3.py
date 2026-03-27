@@ -29,3 +29,6 @@ entry_deck_height.grid(column=1,row=3,padx=10,pady=5)
 
 
 main()
+ if not name.replace(" ", "").isalpha():
+        messagebox.showerror("Input Error", "Customer full name must contain letters only")
+        return False
