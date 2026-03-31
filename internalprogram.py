@@ -23,7 +23,7 @@ def check_input(name, receipt, item, quantity, hired_date, return_date):
 
     # Name must be letters only
     if not name.replace(" ", "").isalpha():
-        messagebox.showerror("Input Error", "Customer full name must contain letters only")
+        messagebox.showerror("Input Error", "Customer full name must contain only letters")
         return False
 
     # Receipt number must be numbers only
