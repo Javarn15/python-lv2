@@ -17,7 +17,7 @@ return_dates = []
 # ---------------- VALIDATION FUNCTION ----------------
 def check_input(name, receipt, item_hired, quantity, hired_date, return_date):
 
-    if name == "" or receipt == "" or item_hired == "" or quantity == "" or hired_date == "" or return_date == "":
+    if name == "" or receipt == "" or items == "" or quantity == "" or hired_date == "" or return_date == "":
         messagebox.showerror("Input Error", "All fields must be filled in")
         return False
 
