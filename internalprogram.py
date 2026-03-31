@@ -11,7 +11,7 @@ customer_names = []
 receipt_numbers = []
 items_hired = []
 quantities = []
-hired_dates = []
+hired_date = []
 return_dates = []
 
 # ---------------- VALIDATION FUNCTION ----------------
@@ -42,7 +42,7 @@ def check_input(name, receipt, item, quantity, hired_date, return_date):
         return False
     
 
-     if not hired_dates.isdigit():
+    if not hired_date.isdigit():
         messagebox.showerror("Input Error", "date hired must be a number")
         return False
 
