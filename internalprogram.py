@@ -167,7 +167,7 @@ row_entry.grid(row=6, column=1)
 # ---------------- BUTTONS ----------------
 tk.Button(window, text="Append Hire Details", width=20, command=append_details).grid(row=0, column=3, padx=20)
 tk.Button(window, text="Print Hire Details", width=20, command=print_hire_details).grid(row=1, column=3, padx=20)
-tk.Button(window, text="Row to Delete", width=25, command=delete_record).grid(row=2, column=3, padx=20)
+tk.Button(window, text="Row to delete  ", width=20, command=delete_record).grid(row=2, column=3, padx=20)
 tk.Button(window, text="Quit Program", width=20, command=quit_program).grid(row=3, column=3, padx=20)
 
 # ---------------- TABLE DISPLAY ----------------
