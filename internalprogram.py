@@ -15,9 +15,9 @@ hired_date = []
 return_dates = []
 
 # ---------------- VALIDATION FUNCTION ----------------
-def check_input(name, receipt, item, quantity, hired_date, return_date):
+def check_input(name, receipt, item_hired, quantity, hired_date, return_date):
 
-    if name == "" or receipt == "" or item == "" or quantity == "" or hired_date == "" or return_date == "":
+    if name == "" or receipt == "" or item_hired == "" or quantity == "" or hired_date == "" or return_date == "":
         messagebox.showerror("Input Error", "All fields must be filled in")
         return False
 
@@ -32,7 +32,7 @@ def check_input(name, receipt, item, quantity, hired_date, return_date):
         return False
 
     # Item hired must be letters only
-    if not item.replace(" ", "").isalpha():
+    if not item_hired.replace(" ", "").isalpha():
         messagebox.showerror("Input Error", "Item hired must contain letters only")
         return False
 
@@ -65,7 +65,7 @@ def append_details():
         receipt_numbers.append(receipt)
         items_hired.append(item)
         quantities.append(quantity)
-        hired_dates.append(hired_date)
+        hired_date.append(hired_date)
         return_dates.append(return_date)
 
         clear_inputs()
@@ -87,7 +87,7 @@ def print_hire_details():
                 receipt_numbers[i],
                 items_hired[i],
                 quantities[i],
-                hired_dates[i],
+                hired_date[i],
                 return_dates[i]
             )
         )
@@ -113,7 +113,7 @@ def delete_record():
         receipt_numbers.pop(index)
         items_hired.pop(index)
         quantities.pop(index)
-        hired_dates.pop(index)
+        hired_date.pop(index)
         return_dates.pop(index)
 
         row_entry.delete(0, tk.END)
