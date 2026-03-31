@@ -40,6 +40,11 @@ def check_input(name, receipt, item, quantity, hired_date, return_date):
     if not quantity.isdigit():
         messagebox.showerror("Input Error", "Quantity must be a number")
         return False
+    
+
+     if not hired_dates.isdigit():
+        messagebox.showerror("Input Error", "date hired must be a number")
+        return False
 
     return True
 
